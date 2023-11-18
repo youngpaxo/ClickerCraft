@@ -1,7 +1,7 @@
 /* root */
 @font-face {
     font-family: 'minecraft-font';
-    src: url('/main/assets/font/Minecraft-Regular.otf') format('opentype');
+    src: url('../main/assets/font/Minecraft-Regular.otf') format('opentype');
 }
 
 /* Font general para el cuerpo del documento */
@@ -19,9 +19,14 @@ body {
     background-image: url('/main/assets/gui/bg-plains.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    position: fixed;
+    background-position: center;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
 }
+
 
 /* Estilos para el clickerzone */
 #clickerzone {
@@ -52,8 +57,8 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    width: 546px;
-    height: 15px;
+    width: 85%;
+    height: auto;
 }
 
 .xp-image {
@@ -112,5 +117,34 @@ body {
 /* hotbar */
 #hotbar img {
     image-rendering: pixelated;
-    width: 100%;
+    width: 80%;
+    position: absolute;
+    bottom: 20px;
+    /* center */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    /* Aquí puedes definir los estilos específicos para pantallas pequeñas */
+    body {}
+
+    #hud {
+        /* Estilos para el HUD en pantallas pequeñas */
+        background-image: url('/main/assets/gui/bg-plains.png');
+        /* Cambia la imagen de fondo, si es necesario */
+    }
+
+    #clickerzone {
+        /* Estilos para el clickerzone en pantallas pequeñas */
+        width: 200px;
+        /* Cambia el ancho, si es necesario */
+        height: 200px;
+        /* Cambia la altura, si es necesario */
+    }
+
+    /* Agrega más estilos según tus necesidades */
 }
