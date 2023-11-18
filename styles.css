@@ -8,12 +8,54 @@
 body {
     font-family: 'MiFuentePersonalizada', sans-serif;
     background-color: #eaeaea;
-    /* Color de fondo suave */
     color: #333;
-    /* Color de texto para una buena legibilidad */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+
+}
+
+#hud {
+    background-color: #4d4444;
+    width: 1284px;
+    height: 2778px;
+}
+
+/* Estilos para el clickerzone */
+#clickerzone {
+    margin: 20px;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    cursor: pointer;
+    /* Cambia el cursor para indicar que es interactivo */
+    transition: transform 0.1s ease;
+}
+
+#clickerzone.clicked {
+    transform: scale(0.95);
+    /* Efecto de escala al hacer clic */
+}
+
+/* Estilos para el clicker */
+#clicker img {
+    width: 100%;
+    /* Asegura que la imagen se ajuste al contenedor */
+    height: 100%;
 }
 
 /* Estilos para el contenedor de la barra de experiencia */
+
+
+
 .experience-bar-container {
     margin: 0 auto;
     /* Centrar div */
@@ -75,26 +117,13 @@ body {
         1px 1px 0 #000;
 }
 
-/* Estilos para el clickerzone */
-#clickerzone {
-    margin: 20px;
-    height: 250px;
-    width: 250px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    cursor: pointer;
-    /* Cambia el cursor para indicar que es interactivo */
-    transition: transform 0.1s ease;
-}
+/* hotbar */
 
-#clickerzone.clicked {
-    transform: scale(0.95);
-    /* Efecto de escala al hacer clic */
-}
-
-/* Estilos para el clicker */
-#clicker img {
-    width: 100%;
-    /* Asegura que la imagen se ajuste al contenedor */
-    height: 100%;
+#hotbar img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    /* Usar 'auto' para mantener la relación de aspecto original */
 }
