@@ -12,6 +12,7 @@ body {
     touch-action: manipulation;
     height: 100vh;
     width: 100%;
+    user-select: none;
 }
 
 #hud {
@@ -21,7 +22,6 @@ body {
     height: 100%;
     width: 100%;
 }
-
 
 /* Estilos para el clickerzone */
 #clickerzone {
@@ -37,32 +37,27 @@ body {
 
 #clickerzone.clicked {
     transform: scale(0.95);
-    /* Efecto de escala al hacer clic */
 }
 
 /* Estilos para el clicker */
 #clicker img {
     image-rendering: pixelated;
     width: 100%;
-    /* Asegura que la imagen se ajuste al contenedor */
     height: 100%;
 }
 
 /* Estilos para el contenedor de la barra de experiencia */
-
-
-
 .experience-bar-container {
     margin: 0 auto;
-    /* Centrar div */
     display: flex;
     justify-content: center;
-    /* Centrar imagen */
     position: relative;
     width: 546px;
-    /* Ajustar según tu imagen de fondo */
     height: 15px;
-    /* Ajustar según tu imagen de fondo */
+}
+
+.xp-image {
+    image-rendering: pixelated;
 }
 
 /* Estilos para la imagen de fondo */
@@ -99,7 +94,7 @@ body {
 /* Estilos para el indicador de nivel */
 .level-indicator {
     font-size: 19px;
-    color: #76a351;
+    color: #8bca59;
     /* Color del texto */
     position: absolute;
     top: -15px;
@@ -115,7 +110,6 @@ body {
 }
 
 /* hotbar */
-
 #hotbar img {
     image-rendering: pixelated;
     width: 100%;
