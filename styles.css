@@ -1,7 +1,7 @@
 /* root */
 @font-face {
     font-family: 'MiFuentePersonalizada';
-    src: url('/font/Minecraft-Regular.otf') format('truetype');
+    src: url('assets/font/Minecraft-Regular.otf') format('truetype');
 }
 
 /* Font general para el cuerpo del documento */
@@ -19,6 +19,7 @@ body {
     padding: 0;
     overflow: hidden;
     position: relative;
+    touch-action: manipulation;
 
 }
 
