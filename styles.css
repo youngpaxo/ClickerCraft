@@ -1,12 +1,12 @@
 /* root */
 @font-face {
-    font-family: 'MiFuentePersonalizada';
+    font-family: 'minecraft-font';
     src: url('/main/assets/font/Minecraft-Regular.otf') format('truetype');
 }
 
 /* Font general para el cuerpo del documento */
 body {
-    font-family: 'MiFuentePersonalizada', sans-serif;
+    font-family: 'minecraft-font', sans-serif;
     background-color: #eaeaea;
     color: #333;
     height: 100vh;
