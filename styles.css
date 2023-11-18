@@ -1,7 +1,7 @@
 /* root */
 @font-face {
     font-family: 'minecraft-font';
-    src: url('/main/assets/font/Minecraft-Regular.otf') format('truetype');
+    src: url('/main/assets/font/Minecraft-Regular.otf') format('opentype');
 }
 
 /* Font general para el cuerpo del documento */
